@@ -167,6 +167,68 @@ html {
     pointer-events: none;
 }
 
+.gradient-orb {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 75vw;
+    height: 75vw;
+    max-width: 1000px;
+    max-height: 1000px;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 140, 0, 0.8) 0%,
+        rgba(255, 120, 0, 0.6) 10%,
+        rgba(255, 100, 0, 0.4) 20%,
+        rgba(255, 80, 0, 0.25) 35%,
+        rgba(255, 60, 0, 0.15) 50%,
+        rgba(255, 40, 0, 0.08) 65%,
+        transparent 80%
+    );
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: float 8s ease-in-out infinite, pulse 4s ease-in-out infinite alternate;
+}
+
+.gradient-orb::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 220, 150, 0.9) 0%,
+        rgba(255, 180, 80, 0.7) 20%,
+        rgba(255, 150, 50, 0.4) 40%,
+        transparent 70%
+    );
+    border-radius: 50%;
+    filter: blur(30px);
+    animation: innerGlow 3s ease-in-out infinite alternate;
+}
+
+.gradient-orb::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 25%;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 200, 1) 0%,
+        rgba(255, 220, 120, 0.8) 30%,
+        transparent 60%
+    );
+    border-radius: 50%;
+    filter: blur(10px);
+    animation: coreGlow 2s ease-in-out infinite alternate;
+}
+
 /* Bottom gradient orb */
 .bottom-gradient-orb {
     position: fixed;
