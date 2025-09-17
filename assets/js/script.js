@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const typingElement = document.getElementById('typing-command');
     if (typingElement) {
         const commands = [
-            'npm install codeduet',
-            'pip install codeduet-sdk',
-            'curl -X POST https://api.codeduet.dev',
-            'git clone https://github.com/codeduet/starter'
+            'npm install -g @codeduet-cli/codeduet-cli',
+            'codeduet init my-project',
+            'codeduet generate component',
+            'git clone https://github.com/CodeDuet/codeduet-ai-agent'
         ];
         
         let commandIndex = 0;
@@ -94,21 +94,21 @@ document.addEventListener('DOMContentLoaded', function() {
     if (tryBtn) {
         tryBtn.addEventListener('click', () => {
             // Replace with actual CodeDuet app URL
-            window.open('https://github.com/ksapp/codeduet', '_blank');
+            window.open('https://github.com/CodeDuet/codeduet-ai-agent', '_blank');
         });
     }
 
     if (ctaBtn) {
         ctaBtn.addEventListener('click', () => {
             // Replace with actual API documentation URL
-            window.open('https://github.com/ksapp/codeduet/blob/main/README.md', '_blank');
+            window.open('https://github.com/CodeDuet/codeduet-cli', '_blank');
         });
     }
 
     if (docBtn) {
         docBtn.addEventListener('click', () => {
             // Replace with actual documentation URL
-            window.open('https://github.com/ksapp/codeduet/wiki', '_blank');
+            window.open('https://github.com/CodeDuet/codeduet-cli', '_blank');
         });
     }
 
