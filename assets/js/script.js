@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'npm install -g @codeduet-cli/codeduet-cli',
             'codeduet init my-project',
             'codeduet generate component',
-            'git clone https://github.com/CodeDuet/codeduet-ai-agent'
+            'git clone https://github.com/CodeDuet/codeduet-ai-studio'
         ];
         
         let commandIndex = 0;
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (tryBtn) {
         tryBtn.addEventListener('click', () => {
             // Replace with actual CodeDuet app URL
-            window.open('https://github.com/CodeDuet/codeduet-ai-agent', '_blank');
+            window.open('https://github.com/CodeDuet/codeduet-ai-studio', '_blank');
         });
     }
 
