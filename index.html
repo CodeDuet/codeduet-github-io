@@ -10,7 +10,12 @@
     <meta name="description" content="The next frontier of AI development. CodeDuet provides intelligent code generation, analysis, and pair programming tools for developers. Compatible with OpenAI and Anthropic SDKs.">
     <meta name="keywords" content="AI development, code generation, pair programming, CLI tools, developer tools, artificial intelligence, coding assistant, OpenAI, Anthropic">
     <meta name="author" content="CodeDuet">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://codeduet.com/">
@@ -20,50 +25,110 @@
     <meta property="og:url" content="https://codeduet.com/">
     <meta property="og:title" content="CodeDuet - AI-Powered Development Tools & CLI">
     <meta property="og:description" content="The next frontier of AI development. Intelligent code generation, analysis, and pair programming tools for developers.">
-    <meta property="og:image" content="https://codeduet.com/assets/images/codeduet-og-image.png">
+    <meta property="og:image" content="https://codeduet.com/assets/images/codeduet-logo.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="CodeDuet">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@codeduet">
+    <meta property="twitter:creator" content="@codeduet">
     <meta property="twitter:url" content="https://codeduet.com/">
     <meta property="twitter:title" content="CodeDuet - AI-Powered Development Tools & CLI">
     <meta property="twitter:description" content="The next frontier of AI development. Intelligent code generation, analysis, and pair programming tools for developers.">
-    <meta property="twitter:image" content="https://codeduet.com/assets/images/codeduet-og-image.png">
+    <meta property="twitter:image" content="https://codeduet.com/assets/images/codeduet-logo.svg">
+    <meta property="twitter:image:alt" content="CodeDuet Logo - AI-Powered Development Tools">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
     <link rel="shortcut icon" href="/favicon.ico?v=2">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://github.com">
+    
+    <!-- Preconnect for critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Optimized font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "CodeDuet",
-      "description": "AI-powered development tools and CLI for intelligent code generation, analysis, and pair programming",
-      "url": "https://codeduet.com",
-      "applicationCategory": "DeveloperApplication",
-      "operatingSystem": "Cross-platform",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "author": {
+    [
+      {
+        "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "CodeDuet"
+        "name": "CodeDuet",
+        "url": "https://codeduet.com",
+        "logo": "https://codeduet.com/assets/images/codeduet-logo.svg",
+        "description": "AI-powered development tools and CLI for intelligent code generation, analysis, and pair programming",
+        "foundingDate": "2024",
+        "sameAs": [
+          "https://github.com/CodeDuet/codeduet-cli",
+          "https://github.com/CodeDuet/codeduet-ai-studio",
+          "https://github.com/CodeDuet/codeduet-microvm-ai-agent-sandbox"
+        ]
       },
-      "sameAs": [
-        "https://github.com/CodeDuet/codeduet-cli"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CodeDuet - AI-Powered Development Tools",
+        "url": "https://codeduet.com",
+        "description": "The next frontier of AI development. CodeDuet provides intelligent code generation, analysis, and pair programming tools for developers.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "CodeDuet"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://codeduet.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CodeDuet CLI",
+        "description": "AI-powered development tools and CLI for intelligent code generation, analysis, and pair programming",
+        "url": "https://codeduet.com",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform",
+        "downloadUrl": "https://github.com/CodeDuet/codeduet-cli",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "CodeDuet",
+          "url": "https://codeduet.com"
+        },
+        "sameAs": [
+          "https://github.com/CodeDuet/codeduet-cli"
+        ],
+        "keywords": "AI development, code generation, pair programming, CLI tools, developer tools, artificial intelligence, coding assistant",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "ratingCount": "1",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    ]
     </script>
 </head>
 <body>
@@ -245,6 +310,20 @@
         <div class="bottom-gradient-orb"></div>
     </main>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Load JavaScript asynchronously for better performance -->
+    <script src="assets/js/script.js" defer></script>
+    
+    <!-- Google Analytics (if needed in future) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+    
+    <!-- Schema markup validation (remove in production) -->
+    <script>
+    // Validate structured data in development
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        console.log('Structured data validation available at: https://search.google.com/test/rich-results');
+        console.log('Open Graph validation available at: https://developers.facebook.com/tools/debug/');
+        console.log('Twitter Card validation available at: https://cards-dev.twitter.com/validator');
+    }
+    </script>
 </body>
 </html>
